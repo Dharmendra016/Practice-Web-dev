@@ -3,12 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
 
 .container{
+    position:sticky;
+    top:0;
+z-index:999;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to top, rgb(214, 83, 231) , rgb(101, 99, 241));
     background-repeat: no-repeat;
+}
+.hero-section{
+    position:relative;
+    z-index:99;
 }
 
 .logo{
@@ -78,7 +88,7 @@
     background-color: rgb(68, 204, 204);
     border:1px solid rgb(68, 204, 204);
     color: white;
-   
+
     transition-property: transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -93,7 +103,7 @@
 
 }
 
-.secondary-btn{ 
+.secondary-btn{
     padding:5px 13px;
     font-size: 1rem;
     background-color: transparent;
