@@ -4,18 +4,27 @@
     box-sizing: border-box;
 }
 body{
-    position: relative;
+    background: linear-gradient(to top, rgb(214, 83, 231) , rgb(101, 99, 241));
+    background-repeat: no-repeat;
+    min-height: 200vh;
 }
 
 .container{
+    z-index:999;
+    width: 100%;
+    /* min-height: 100vh; */
+    position: relative;
+}
+
+.sticky{
     position:sticky;
     top:0;
-z-index:999;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(to top, rgb(214, 83, 231) , rgb(101, 99, 241));
-    background-repeat: no-repeat;
 }
+
+.sticky .nav-bar {
+    background-color: red;
+}
+
 .hero-section{
     position:relative;
     z-index:99;
@@ -41,6 +50,7 @@ z-index:999;
     /* background-color: aqua; */
     height: 50px;
     align-items: center;
+    position: relative;
 }
 
 .nav-items{
