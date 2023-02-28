@@ -11,8 +11,9 @@ body{
 
 .container{
     z-index:999;
-    width: 100%;
+    width: 80%;
     position: relative;
+    margin: 0 auto ;
 }
 
 .sticky{
@@ -22,7 +23,7 @@ body{
 
 .sticky .nav-bar {
     background-color: transparent;
-    box-shadow: 10px -1px 9px 2px #ffb3b3;
+    box-shadow: 0px 3px 9px 2px #ffb3b3;
     height: 70px;
 }
 
